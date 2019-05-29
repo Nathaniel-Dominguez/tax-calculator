@@ -11,23 +11,30 @@
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Hello from "./components/Hello"
+import Panel from "./components/Panel.vue";
+import InputForm from "./components/InputForm";
+import Result from "./components/Result";
+import {calcTaxes } from "./calc.js";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    Hello
+    Hello,
+    Panel,
+    InputForm,
+    Result
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss" src="./assets/styles/App.scss">
 body {
   margin: 0;
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
